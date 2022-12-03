@@ -4,7 +4,12 @@ function PriceContainer() {
   return (
     <>
       <div className="PriceContainer">
-        <p>Placeholder</p>
+        <div className="Upper">
+          <span>100K PAGEVIEWS</span>
+          <span>$16.00</span>
+          <span> / month</span>
+          <div className="Slider"></div>
+        </div>
       </div>
     </>
   );
