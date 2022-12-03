@@ -1,0 +1,38 @@
+.App {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0% 0% 0% 25%;
+  box-sizing: border-box;
+  min-height: 100vh;
+  text-align: center;
+  font-family: "Light";
+  background-color: hsl(230, 100%, 99%);
+}
+
+.Header {
+  background-image: url("./images/bg-pattern.svg");
+  background-repeat: no-repeat;
+  min-height: 43vh;
+  min-width: 100%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.Circles {
+  background-image: url("./images/pattern-circles.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 2;
+  display: block;
+  min-height: 15vh;
+  margin: 3% 0% 0% 29%;
+}
+
+@font-face {
+  font-family: "Light";
+  src: local("Manrope"), url("./fonts/Manrope-Light.ttf") format("truetype");
+}

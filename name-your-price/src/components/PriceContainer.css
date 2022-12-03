@@ -1,0 +1,10 @@
+.PriceContainer {
+  background-color: white;
+  width: 30%;
+  padding: 0% 0% 15% 0%;
+  position: absolute;
+  z-index: 2;
+  margin: 14% 20% 0% 0%;
+  border-radius: 2%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 8%);
+}
