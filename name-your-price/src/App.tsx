@@ -1,10 +1,5 @@
-import React from "react";
-
 //stylesheets
 import "./App.css";
-
-//fonts
-import "./fonts/Manrope-Light.ttf";
 
 //components
 import PriceContainer from "./components/PriceContainer";

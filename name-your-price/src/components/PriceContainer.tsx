@@ -1,4 +1,5 @@
 import "./PriceContainer.css";
+import Slider from "@mui/material/Slider";
 
 function PriceContainer() {
   return (
@@ -8,7 +9,11 @@ function PriceContainer() {
           <span>100K PAGEVIEWS</span>
           <span>$16.00</span>
           <span> / month</span>
-          <div className="Slider"></div>
+          <Slider
+            value={
+              30
+            } /*onChange={handleChange}*/ /*disabled*/ /*color="secondary"*/
+          />
         </div>
       </div>
     </>
