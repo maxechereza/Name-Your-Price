@@ -121,7 +121,7 @@ function PriceContainer() {
                 color: "hsl(15, 100%, 70%)",
                 fontSize: "x-small",
                 backgroundColor: "hsl(14, 92%, 95%)",
-                borderRadius: "20%",
+                borderRadius: "20px",
                 padding: "1% 1% 1% 1%",
                 margin: "0% 0% 0% -3%",
               }}
@@ -130,7 +130,14 @@ function PriceContainer() {
             </b>
           </div>
         </div>
-        <div className="DownSection"></div>
+        <div className="DownSection">
+          <ul className="List">
+            <li className="ListItem">Unlimited websites</li>
+            <li className="ListItem">100% data ownership</li>
+            <li className="ListItem">Email reports</li>
+          </ul>
+          <button className="Button">Start my trial</button>
+        </div>
       </div>
     </>
   );
