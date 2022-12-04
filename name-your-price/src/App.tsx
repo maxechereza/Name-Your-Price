@@ -1,7 +1,4 @@
-//stylesheets
 import "./App.css";
-
-//components
 import PriceContainer from "./components/PriceContainer";
 
 function App() {
