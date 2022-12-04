@@ -25,11 +25,17 @@
 .Circles {
   background-image: url("./images/pattern-circles.svg");
   background-repeat: no-repeat;
-  position: absolute;
+  position: fixed;
   z-index: 2;
   display: block;
   min-height: 15vh;
-  margin: 3% 0% 0% 29%;
+  margin: 3% 0% 0% 37%;
+}
+
+.Title {
+  position: initial;
+  min-width: max-content;
+  margin: 9% 0% 0% -75%;
 }
 
 @font-face {
