@@ -1,5 +1,5 @@
 .PriceContainer {
-  background-color: white;
+  background-color: hsl(0, 0%, 100%);
   width: 30%;
   padding: 0% 0% 15% 0%;
   position: absolute;
@@ -9,6 +9,19 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 8%);
 }
 
-.Upper {
-  margin: 0% 8% 0% 8%;
+.UpperSection {
+  margin: 8% 8% 8% 8%;
+}
+
+.PriceSummary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Billing {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 0% 0% 0% 25%;
 }
