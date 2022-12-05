@@ -1,5 +1,5 @@
-import "./App.css";
-import PriceContainer from "./components/PriceContainer";
+import "./styles/App.css";
+import { PriceContainer } from "./components";
 
 function App() {
   return (

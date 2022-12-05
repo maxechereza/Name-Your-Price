@@ -37,9 +37,6 @@
 }
 
 .List {
-  font-size: small;
-  color: hsl(225, 20%, 60%);
-  font-weight: bold;
   text-align: left;
   list-style-image: url("../images/icon-check.svg");
   margin: 5% 0% 5% 3%;
@@ -58,4 +55,31 @@
   border-radius: 20px;
   width: 30%;
   cursor: pointer;
+}
+
+.CommonText {
+  color: hsl(225, 20%, 60%);
+  font-weight: bold;
+}
+
+.SmallCommonText {
+  font-size: small;
+}
+
+.xxLargeCommonText {
+  font-size: xx-large;
+  color: hsl(227, 35%, 25%);
+}
+
+.ExpandedCommonText {
+  font-stretch: expanded;
+}
+
+.Discount {
+  color: hsl(15, 100%, 70%);
+  font-size: x-small;
+  background-color: hsl(14, 92%, 95%);
+  border-radius: 20px;
+  padding: 1% 2% 1% 2%;
+  margin: 0% 0% 0% -3%;
 }
