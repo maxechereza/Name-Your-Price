@@ -31,8 +31,9 @@ export function useSlider(
     return sliderMarkers[previousMarkIndex + 1].scaledValue;
   }
 
+  const scaledResponse = scale(value);
   const scaledValue = ensure(
-    sliderMarkers.find((x) => x.scaledValue === scale(value))
+    sliderMarkers.find((x) => x.scaledValue === scaledResponse)
   );
 
   const onChange = useCallback(
