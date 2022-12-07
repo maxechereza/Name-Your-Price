@@ -1,51 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+
 .App {
   align-items: center;
   display: flex;
   flex-direction: column;
   flex: 1;
-  margin: 0;
-  padding: 0% 0% 0% 25%;
-  box-sizing: border-box;
+  margin: auto;
   min-height: 100vh;
+  max-width: 1440px;
   text-align: center;
   font-family: "Medium";
   background-color: hsl(230, 100%, 99%);
 }
-
-/* @media only screen and (min-width: 375) {
-  .App {
-    flex-direction: column;
-  }
-} */
 
 .Header {
   background-image: url("../images/bg-pattern.svg");
   background-repeat: no-repeat;
   min-height: 43vh;
   min-width: 100%;
-  margin: 0;
-  padding: 0;
   position: absolute;
-  z-index: 1;
-}
-
-.Circles {
-  background-image: url("../images/pattern-circles.svg");
-  background-repeat: no-repeat;
-  position: fixed;
-  z-index: 2;
-  display: block;
-  min-height: 15vh;
-  margin: 3% 0% 0% 37%;
 }
 
 .Title {
-  position: initial;
-  min-width: max-content;
-  margin: 9% 0% 0% -75%;
+  display: flex;
+  flex-direction: column;
+  padding: 16% 0% 8% 0%;
+  background-image: url("../images/pattern-circles.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: large;
+}
+
+.DesktopTitle {
+  display: none;
+  font-size: medium;
+  color: grey;
+}
+
+.MobileTitle {
+  display: contents;
+  line-height: 0px;
+  font-size: small;
+  color: grey;
 }
 
 @font-face {
   font-family: "Medium";
-  src: local("Manrope"), url("../fonts/Manrope-Medium.ttf") format("truetype");
+  src: local("Manrope"), url("../fonts/Manrope-Regular.ttf") format("truetype");
+}
+
+@media (min-width: 530px) {
+  .Title {
+    padding: 4% 0% 6% 0%;
+    font-size: x-large;
+  }
+
+  .DesktopTitle {
+    display: contents;
+  }
+  .MobileTitle {
+    display: none;
+  }
 }

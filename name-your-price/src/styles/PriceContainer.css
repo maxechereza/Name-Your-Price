@@ -1,9 +1,9 @@
 .PriceContainer {
   background-color: hsl(0, 0%, 100%);
-  width: 30%;
+  width: 90%;
   position: absolute;
-  z-index: 2;
-  margin: 14% 20% 0% 0%;
+  margin: 50% 0% 0% 0%;
+  padding: 0% 0% 8% 0%;
   border-radius: 2%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 8%);
   display: flex;
@@ -16,44 +16,48 @@
 
 .PriceSummary {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  padding: 0% 0% 8% 0%;
+}
+
+.Cost {
+  padding: 6% 0% 0% 0%;
 }
 
 .Billing {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin: 0% 0% 8% 25%;
+  margin: 6% -10% 12% 0%;
 }
 
 .DownSection {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   border-top: 1px solid hsl(224, 65%, 95%);
 }
 
 .List {
-  text-align: left;
+  text-align: center;
   list-style-image: url("../images/icon-check.svg");
-  margin: 5% 0% 5% 3%;
+  margin: 8% 0% 6% 0%;
 }
 
 .ListItem {
-  margin: 0% 0% 8% 0%;
+  margin: 0% 0% 8% -12%;
 }
 
 .Button {
   background-color: hsl(227, 35%, 25%);
   color: hsl(230, 100%, 99%);
   font-weight: bold;
-  margin: 0% 8% 0% 0%;
-  padding: 2% 0% 2% 0%;
+  padding: 3% 0% 3% 0%;
   border-radius: 20px;
-  width: 30%;
+  width: 50%;
   cursor: pointer;
 }
 
@@ -73,6 +77,8 @@
 
 .ExpandedCommonText {
   font-stretch: expanded;
+  margin: 2%;
+  letter-spacing: 1px;
 }
 
 .Discount {
@@ -82,4 +88,64 @@
   border-radius: 20px;
   padding: 1% 2% 1% 2%;
   margin: 0% 0% 0% -3%;
+}
+
+.DesktopPricing {
+  display: none;
+}
+
+.MobilePricing {
+  display: contents;
+}
+
+.DesktopDiscount {
+  display: none;
+}
+
+.MobileDiscount {
+  display: contents;
+}
+
+@media (min-width: 530px) {
+  .PriceContainer {
+    width: 35%;
+    height: 40%;
+    margin: 16% 0% 0% 0;
+  }
+
+  .PriceSummary {
+    flex-direction: row;
+  }
+
+  .Billing {
+    margin: 6% -4% 8% 25%;
+  }
+
+  .DesktopPricing {
+    display: contents;
+  }
+  .MobilePricing {
+    display: none;
+  }
+
+  .DesktopDiscount {
+    display: contents;
+  }
+  .MobileDiscount {
+    display: none;
+  }
+
+  .DownSection {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .List {
+    text-align: left;
+  }
+
+  .Button {
+    width: 35%;
+    padding: 2% 0% 2% 0%;
+  }
 }

@@ -47,15 +47,28 @@ function PriceContainer() {
   return (
     <div className="PriceContainer">
       <div className="UpperSection">
-        <div className="PriceSummary">
-          <b className="CommonText ExpandedCommonText">{label} PAGEVIEWS</b>
-          <div>
-            <span className="CommonText xxLargeCommonText">{`$${price}.00`}</span>
-            <span className="CommonText"> / month</span>
+        <div className="MobilePricing">
+          <div className="PriceSummary">
+            <b className="CommonText ExpandedCommonText">{label} PAGEVIEWS</b>
+            <Slider scale={scale} value={value} onChange={onChange} />
+            <div className="Cost">
+              <span className="CommonText xxLargeCommonText">{`$${price}.00`}</span>
+              <span className="CommonText"> / month</span>
+            </div>
           </div>
         </div>
 
-        <Slider scale={scale} value={value} onChange={onChange} />
+        <div className="DesktopPricing">
+          <div className="PriceSummary">
+            <b className="CommonText ExpandedCommonText">{label} PAGEVIEWS</b>
+            <div>
+              <span className="CommonText xxLargeCommonText">{`$${price}.00`}</span>
+              <span className="CommonText"> / month</span>
+            </div>
+          </div>
+
+          <Slider scale={scale} value={value} onChange={onChange} />
+        </div>
 
         <div className="Billing">
           <span className="CommonText SmallCommonText">Monthly Billing</span>
@@ -63,7 +76,12 @@ function PriceContainer() {
           <Switch checked={isMonthlyBilling} setChecked={setIsMonthlyBilling} />
 
           <span className="CommonText SmallCommonText">Year Billing</span>
-          <span className="CommonText Discount">25% discount</span>
+          <div className="MobileDiscount">
+            <span className="CommonText Discount">-25%</span>
+          </div>
+          <div className="DesktopDiscount">
+            <span className="CommonText Discount">25% discount</span>
+          </div>
         </div>
       </div>
       <div className="DownSection">
